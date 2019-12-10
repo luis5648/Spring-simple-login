@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" >
+<head>
+<meta charset="UTF-8">
+<title>Inicio de sesión</title>
+
+<style>
+	h1{
+		text-align: center;
+
+	}
+	div{
+		
+		text-align: center;
+		border: solid black 1px;
+		padding: 5%;
+		margin: 10%
+		
+	}
+	
+	body{
+	
+		background-color: gray;
+	}
+</style>
+
+</head>
+<body>
+	<!-- <p th:text="hola, " ' + ${nombre} + ' " ></p> -->
+
+	<h1>inicio de sesión</h1>
+	
+	<div>
+		
+		<form action="/login" method="post">
+			
+
+			<input type="text" name="usuario" placeholder="Usuario">
+			<input type="password" name="pass" placeholder="Contraseña">
+
+
+			<input type="submit" value="Aceptar">
+		</form>
+	
+	</div>
+</body>
+</html>
