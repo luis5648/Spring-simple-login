@@ -18,7 +18,10 @@ public class UserController {
 	
 	@PostMapping("/login")
 	public String login(){
-		
+		//pendiente codigo para manejar la lógica del usuario
+		//(usuario y contraseña) y para manejar sus respectivos valores como un objeto
+		//y así poder capturarlos mediante un formulario
+		// info: https://spring.io/guides/gs/handling-form-submission/
 		
 		return "nothing";
 	}
