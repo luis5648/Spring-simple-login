@@ -32,11 +32,11 @@
 	
 	<div>
 		
-		<form action="/login" method="post">
+		<form action="#" th:action="@{/login}" th:object="${usuario}" method="post">
 			
 
-			<input type="text" name="usuario" placeholder="Usuario">
-			<input type="password" name="pass" placeholder="Contraseña">
+			<input type="text"  placeholder="Usuario" th:field="*{nombre}">
+			<input type="password"  placeholder="Contraseña" th:field="*{pass}">
 
 
 			<input type="submit" value="Aceptar">
