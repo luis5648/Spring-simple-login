@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org" >
+<html xmlns:th="http://www.thymeleaf.org" >
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Inicio de sesión</title>
 
 <style>
@@ -26,13 +26,13 @@
 
 </head>
 <body>
-	<!-- <p th:text="hola, " ' + ${nombre} + ' " ></p> -->
+	
 
 	<h1>inicio de sesión</h1>
 	
 	<div>
 		
-		<form action="#" th:action="@{/login}" th:object="${usuario}" method="post">
+		<form action="#" th:action="@{/loginz}" th:object="${usuario}" method="post">
 			
 
 			<input type="text"  placeholder="Usuario" th:field="*{nombre}">
